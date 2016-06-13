@@ -3,7 +3,7 @@
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <!--<![endif]-->
 
 <head>
   <meta charset="UTF-8">
@@ -26,31 +26,67 @@
   <div class="site-wrapper">
     <div class="container">
 
-      <header class="page-header">
-        <div class="header-top clearfix">
+      <header class="page-header clearfix">
+        <div class="header-nav clearfix">
 
-          <a href="/" class="index-logo">
-            <img src="img/pictures/logo.png" alt="GlacyShop" width="154" height="64" >
-          </a>
-          <nav class="header-top-nav">
-            <ul>
-              <li><a href="#">Каталог</a></li>
-              <li><a href="#">Доставка и оплата</a></li>
-              <li><a href="#">О Компании</a></li>
-            </ul>
-          </nav>
-
-          <div class="userblock">
-            <span class="search-btn btn-top" href="/" title="Поиск"><i class="fa fa-search" aria-hidden="true"></i>
-</span>
-            <a class="enter-btn btn-top" href="#" title="Вход"><i class="fa fa-sign-in" aria-hidden="true"></i>
-Вход</a>
-            <a class="cart-btn btn-top" href="/" title="Корзина"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
-Корзина</a>
+          <div class="header-logo">
+            <a href="/">
+              <img src="img/pictures/logo.png" alt="GlacyShop" width="154" height="64" >
+            </a>
           </div>
-
+          
+          <ul class="header-navigation">
+            <li class="drop-out-list">
+              <a class="top-link" href="#">Каталог</a>
+              <ul class="catalog-list">
+                <li><a class="new" href="#">Новинки</a></li>
+                <li><a href="#">Сливочное</a></li>
+                <li><a href="#">Щербеты</a></li>
+                <li><a href="#">Фруктовый лед</a></li>
+                <li><a href="#">Мелорин</a></li>
+              </ul>
+            </li>
+            <li><a class="top-link" href="#">Доставка и оплата</a></li>
+            <li><a class="top-link" href="#">О Компании</a></li>
+          </ul>
+          
         </div>
+
+        <div class="userblock">
+          <div class="userblock-buttons">
+            <div class="search btn-top">
+              <a class="search-btn " href="#" title="Поиск">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </a>
+              <form method="" action="get" class="search-form">
+                <input type="text" placeholder="Что ищем?">
+              </form> 
+            </div>
+            
+            <div class="btn-top">
+              <a class="enter-btn " href="#" title="Вход">
+              <i class="fa fa-sign-in" aria-hidden="true"></i>
+              Вход
+            </a>
+            </div>
+            
+            <div class="btn-top">
+              <a class="cart-btn " href="/" title="Корзина">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              Корзина
+            </a>
+            </div>
+            
+
+            
+          </div>
+          
+          <p>С 10 до 20, ежедневно</p>
+          <span class="phone">8 812 450-25-25</span>
+        </div>
+
       </header>
+      <!-- slider -->
 
       <div class="slider">
         <div class="slide" id="slide1">
@@ -78,25 +114,88 @@
         </div>
       </div>
 
+
+      <main class="main-content">
+
+        <div class="promo  clearfix">
+          <div class="promo-item">
+            <h2>Малинка даром!</h2>
+            <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
+            </p>
+            <a class="promo-btn" href="#">Хочу варенье!</a>
+          </div>
+
+          <div class="promo-item">
+            <h2>Шоколадки даром!</h2>
+            <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
+            </p>
+            <a class="promo-btn" href="#">Хочу варенье!</a>
+          </div>
+        </div>
+
+        <div class="item-list clearfix">
+          <article class="item hit">
+            <div class="item-img">
+              <a href="#"><img src="img/images/ice-1.png " width="267" height="267"></a>
+              <div class="item-price">310&#8381;<span>/кг</span></div>
+            </div>
+            <div class="item-descr"><p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p></div>
+            <div class="hidden-item-part">
+              <a href="#" class="item-view-btn">Быстрый просмотр</a>
+            </div>
+          </article>
+
+          <article class="item hit">
+            <div class="item-img">
+              <a href="#"><img src="img/images/ice-2.png " width="267" height="267"></a>
+              <div class="item-price">380&#8381;<span>/кг</span></div>
+            </div>  
+            <div class="item-descr">
+              <p>Сливочно-кофейное с кусочками шоколада</p>
+            </div>
+           
+            <div class="hidden-item-part">
+              <a href="#" class="item-view-btn">Быстрый просмотр</a>
+            </div>
+          </article>
+
+          <article class="item hit">
+            <div class="item-img">
+              <a href="#"><img src="img/images/ice-3.png" width="267" height="267"></a>
+              <div class="item-price">355&#8381;<span>/кг</span></div>
+            </div>
+            <div class="item-descr">
+              <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+            </div>
+            <div class="hidden-item-part">
+              <a href="#" class="item-view-btn">Быстрый просмотр</a>
+            </div>
+          </article>
+
+          <article class="item hit">
+            <div class="item-img">
+              <a href="#"><img src="img/images/ice-4.png " width="267" height="267"></a>
+              <div class="item-price">415&#8381;<span>/кг</span></div>
+            </div>
+            <div class="item-descr"><p>Сливочное крем-брюле с карамельной подливкой</p></div>
+            <div class="hidden-item-part">
+              <a href="#" class="item-view-btn">Быстрый просмотр</a>
+            </div>
+          </article>
+
+        </div>
+      </main>
     </div>
   </div>
 
 
 
 
+  <!-- modal window search -->
 
 
 
-  <!-- <header class="page-header">
-    <div class="container">
-      
-      
 
-    </div>
-
-  </header>
- -->
-    
 
   <!--[if lt IE 9]>
   <script src="libs/html5shiv/es5-shim.min.js"></script>
