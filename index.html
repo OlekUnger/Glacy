@@ -26,8 +26,8 @@
   <div class="site-wrapper">
     <div class="container">
 
-      <header class="page-header clearfix">
-        <div class="header-nav clearfix">
+      <header class="header clearfix">
+        <nav class="header-nav clearfix">
 
           <div class="header-logo">
             <a href="/">
@@ -35,7 +35,7 @@
             </a>
           </div>
           
-          <ul class="header-navigation">
+          <ul class="nav-list">
             <li class="drop-out-list">
               <a class="top-link" href="#">Каталог</a>
               <ul class="catalog-list">
@@ -50,7 +50,7 @@
             <li><a class="top-link" href="#">О Компании</a></li>
           </ul>
           
-        </div>
+        </nav>
 
         <div class="userblock">
           <div class="userblock-buttons">
@@ -117,36 +117,36 @@
 
       <main class="main-content">
 
-        <div class="promo  clearfix">
-          <div class="promo-item">
+        <section class="promo-list  clearfix">
+          <div class="promo">
             <h2>Малинка даром!</h2>
             <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
             </p>
             <a class="promo-btn" href="#">Хочу варенье!</a>
           </div>
 
-          <div class="promo-item">
+          <div class="promo">
             <h2>Шоколадки даром!</h2>
             <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
             </p>
             <a class="promo-btn" href="#">Хочу варенье!</a>
           </div>
-        </div>
+        </section>
 
-        <div class="item-list clearfix">
-          <article class="item hit">
-            <div class="item-img">
+        <section class="item-list clearfix">
+          <article class="item">
+            <div class="item-img hit">
               <a href="#"><img src="img/images/ice-1.png " width="267" height="267"></a>
               <div class="item-price">310&#8381;<span>/кг</span></div>
             </div>
             <div class="item-descr"><p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p></div>
-            <div class="hidden-item-part">
-              <a href="#" class="item-view-btn">Быстрый просмотр</a>
-            </div>
+            
+          <button class="item-btn">Быстрый просмотр</button>
+            
           </article>
 
-          <article class="item hit">
-            <div class="item-img">
+          <article class="item">
+            <div class="item-img hit">
               <a href="#"><img src="img/images/ice-2.png " width="267" height="267"></a>
               <div class="item-price">380&#8381;<span>/кг</span></div>
             </div>  
@@ -154,39 +154,82 @@
               <p>Сливочно-кофейное с кусочками шоколада</p>
             </div>
            
-            <div class="hidden-item-part">
-              <a href="#" class="item-view-btn">Быстрый просмотр</a>
+            <div class="item-hidden-part">
+              <button class="item-btn">Быстрый просмотр</button>
             </div>
           </article>
 
-          <article class="item hit">
-            <div class="item-img">
+          <article class="item">
+            <div class="item-img hit">
               <a href="#"><img src="img/images/ice-3.png" width="267" height="267"></a>
               <div class="item-price">355&#8381;<span>/кг</span></div>
             </div>
             <div class="item-descr">
               <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
             </div>
-            <div class="hidden-item-part">
-              <a href="#" class="item-view-btn">Быстрый просмотр</a>
+            <div class="item-hidden-part">
+              <button class="item-btn">Быстрый просмотр</button>
             </div>
           </article>
 
-          <article class="item hit">
-            <div class="item-img">
+          <article class="item ">
+            <div class="item-img hit">
               <a href="#"><img src="img/images/ice-4.png " width="267" height="267"></a>
               <div class="item-price">415&#8381;<span>/кг</span></div>
             </div>
             <div class="item-descr"><p>Сливочное крем-брюле с карамельной подливкой</p></div>
-            <div class="hidden-item-part">
-              <a href="#" class="item-view-btn">Быстрый просмотр</a>
+            <div class="item-hidden-part">
+              <button class="item-btn">Быстрый просмотр</button>
             </div>
           </article>
 
-        </div>
+        </section>
+          
+        <section class="features">
+          <h3>Магазин Глейси  —  это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
+          <div class="feature-item">
+            <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+</p>
+          </div>
+          <div class="feature-item">
+            <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+          </div>
+
+          <div class="feature-item">
+            <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья</p>
+          </div>
+
+          <div class="feature-item">
+            <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
+          </div>
+
+        </section>
+
+        <section class="news-about clearfix">
+          <div class="news-blogs">
+            <h4>Новое в нашем блоге</h4>
+            <a href="#">10  способов сервировки<br>
+              фруктовых щербетов<br>
+              к столу</a>
+            </div>
+
+            <div class="news-mail">
+              <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </p>
+              <form action="#" method="post">
+                <input type="text">
+                <a href="#" title="Отправить">Отправить</a>
+              </form>
+            </div>
+          </section>
       </main>
     </div>
   </div>
+
+
+
+
+
+
 
 
 
