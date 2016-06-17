@@ -16,9 +16,6 @@ ul {
   list-style: none;
   font-size: 0;
 }
-.form-post {
-  position: relative;
-}
 .site-wrapper {
   min-width: 900px;
   max-width: 100%;
@@ -181,6 +178,9 @@ ul {
   position: relative;
   font: 500 1.4rem/3.2rem Roboto, sans-serif;
   padding: 0 16px 0 45px;
+}
+.form-post {
+  position: relative;
 }
 .search {
   position: relative;
