@@ -3,8 +3,8 @@
 @text-dark: #323232;
 @text-light: lighten(@text-dark, 60%);
 @modal-bg: #f8f7f4;
-@background: #afafaf;
-
+@bg-img: #afafaf;
+@Grey: #999;
 
 .clearfix::after{
     content:"";
@@ -36,14 +36,11 @@
   vertical-align: bottom;
 }
 
+
 .btn() {
   .inline-top;
   text-decoration: none;
   text-align: center;
-}
-
-.btn-red() {
-  .btn;
   color: @white;
   background: #f26843;
   border-radius: 100px;
@@ -62,8 +59,16 @@
   }
 }
 
-.btn-red-mini {
-  .btn-red;
+
+.btn-red() {
+  .btn;
+  padding: 10px 50px 14px;
+  font: 600 3.1rem/4.1rem Roboto, sans-serif;
+}  
+  
+
+.btn-red-mini() {
+  .btn;
   padding: 11px 24px;
   font: 700 1.8rem/2.4rem Roboto, sans-serif;
 }
@@ -89,34 +94,37 @@
 }
 
 
-    
-.input {
-  color: @text-dark;
-  font: 400 1.6rem/2.4rem;
-  padding: 11px 15px;
-  /*background-color: @white;*/
-  border: 1px solid rgba(178, 178, 178, 0.52);
-  border-radius: 5px;
+.form() {
+  position: absolute;
+  background-color: @modal-bg;
+  border-radius: 4px;
+  
 
-  &:valid {background-color: @white;}
-  &:hover {border: 2px solid rgba(154, 154, 154, 0.52);}
-  &:focus {border: 2px solid rgba(46, 136, 228, 0.52);}
-  &:focus + label {
-    top:-15px;
-    margin-top: -2px;
-    font: 400 1.1rem/1.3rem Roboto,sans-serif;
-    color: #5b9ddf;;
+  input[type="text"] {
+    color: @text-dark;
+    font: 400 1.6rem/2.4rem Roboto,sans-serif;
+    padding: 11px 15px;
+    border: 1px solid rgba(178, 178, 178, 0.52);
+    border-radius: 5px;
+
+    &:valid {background-color: @white;}
+    &:hover {border: 2px solid rgba(154, 154, 154, 0.52);}
+    &:focus {border: 2px solid rgba(46, 136, 228, 0.52);}
+    &:focus + label {
+      top:-15px;
+      margin-top: -2px;
+      font: 400 1.1rem/1.3rem Roboto,sans-serif;
+      color: #5b9ddf;;
+    }
+
+    & + label {
+      position: absolute;
+      top: 10px;
+      left: 15px;
+      color: @Grey;
+    } 
   }
-
-  & + label {
-    position: absolute;
-    top: 10px;
-    left: 15px;
-    color: #999;
-  } 
-}
-
-
+}  
 
 
 
@@ -189,6 +197,3 @@
        -o-transform: @value;
           transform: @value;
 }
-/*background: -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
-    background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
-    background: linear-gradient(top, #f26843 0%, #e74a35 100%);*/
