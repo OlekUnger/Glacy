@@ -393,7 +393,6 @@ ul {
     border-radius: 10px;
     overflow: hidden;
   }  
-
 }
 
 .news-blogs {
@@ -429,7 +428,6 @@ ul {
     border-radius: 9px;
   }
 
-  
   p {
     color: #5a5a5a;
     display: block;
@@ -450,8 +448,7 @@ ul {
     .input;
     width: 350px;
     height: 44px;
-    margin-right: 10px;
-    
+    margin-right: 10px; 
   }
 }
 
@@ -483,11 +480,8 @@ ul {
     margin-bottom: 20px;
   }
 
-  span {
-    font: 700 1.8rem/2.4rem Roboto,sans-serif;
+  span {font: 700 1.8rem/2.4rem Roboto,sans-serif;}
     
-  }
-
   button {
     .btn-red-mini;
     border:none;
@@ -556,8 +550,6 @@ ul {
     position:relative;
     padding-left: 22px;
     padding-right: 10px;
-
-    strong {font-weight: 700;}
       
     a {display: block;}
 
@@ -567,6 +559,7 @@ ul {
       left: 0;
     }
   }
+  strong {font-weight: 700;} 
 }
 
 .copyright {
@@ -575,9 +568,6 @@ ul {
 }
 
 /*slider-----------------------------------------------------------*/
-
-
-
 
 .slider {
   position: relative;
@@ -598,32 +588,29 @@ ul {
     font: 900 6rem/6.2rem Roboto, sans-serif;
   }
   .slide-btn {
-    .inline-top();
     .btn-red();
     padding: 10px 50px 14px;
     font: 600 3.1rem/4.1rem Roboto, sans-serif;
   } 
 }
 
-
-
 .slider-controls {
-    position: absolute;
-    bottom: 25px;
-    left: 0;
-    z-index: 20;
-    font-size: 0;
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  z-index: 20;
+  font-size: 0;
 
-    label {
-      .inline-top();
-      width: 19px;
-      height: 19px;
-      margin-right: 8px;
-      background-color: transparent;
-      border: 2px solid @white;
-      border-radius: 50%;
-      cursor: pointer;
-    }
+  label {
+    .inline-top();
+    width: 19px;
+    height: 19px;
+    margin-right: 8px;
+    background-color: transparent;
+    border: 2px solid @white;
+    border-radius: 50%;
+    cursor: pointer;
+  }
 }
 
 
@@ -652,21 +639,3 @@ input[type="radio"] {display: none;}
   background-image: url("../img/images/slide-3.png");
 }
 
-.search-form {
-  position: absolute;
-  width: 341px;
-  height: 84px;
-  padding: 20px 15px;
-  background-color: @modal-bg;
-  border-radius: 4px;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-  
-  input[type="text"]  {
-    width: 311px;
-    color: #999;
-    font: 400 1.4rem/2.4rem Roboto, sans-serif;
-    background-color: @white;
-    border: 1px solid #d3d3d2;
-    border-radius: 5px;
-  }
-}
