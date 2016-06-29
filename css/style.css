@@ -12,6 +12,9 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+input[type="checkbox"] {
+  display: none;
+}
 .clearfix::after {
   content: "";
   display: table;
@@ -637,6 +640,7 @@ ul {
 .filters {
   color: #ffffff;
   min-height: 200px;
+  max-width: 910px;
 }
 .filters h2 {
   margin-top: -10px;
@@ -645,6 +649,7 @@ ul {
 }
 .filters .filter {
   margin-right: 20px;
+  margin-bottom: 20px;
   display: inline-block;
   vertical-align: top;
 }
@@ -741,7 +746,8 @@ ul {
 .range-filter .toggle.max-toggle {
   right: 50px;
 }
-.fat-filter ul {
+.fat-filter ul,
+.fill-filter ul {
   height: 36px;
   padding: 5px 10px;
   margin-top: 3px;
@@ -753,19 +759,42 @@ ul {
   ounline: none;
   border: none;
 }
-.fat-filter li {
+.fat-filter li,
+.fill-filter li {
   display: inline-block;
   vertical-align: top;
 }
 input[type="radio"] + label,
 input[type="checkbox"] + label {
-  line-height: 20px;
-  margin: 0 0 20px;
-  padding-left: 34px;
+  position: relative;
+  padding-left: 28px;
+  margin: 0px 10px;
   cursor: pointer;
+}
+input[type="radio"] + label::before,
+input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 22px;
+  height: 22px;
+}
+input[type="radio"] + label::before {
+  background: url('../img/pictures/circle.png') no-repeat;
+}
+input[type="radio"]:checked + label::before {
+  background: url('../img/pictures/circle-dot.png') no-repeat;
+}
+input[type="checkbox"] + label::before {
+  background: url('../img/pictures/quad.png') no-repeat;
+}
+input[type="checkbox"]:checked + label::before {
+  background: url('../img/pictures/quad-check.png') no-repeat;
 }
 .item-list.inner {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 40px;
 }
 .item-list.inner .pagination {
   position: relative;

@@ -7,12 +7,14 @@ body {
   color: @text-dark;
   background-size: 100% auto;
 }
-    
+ 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+input[type="checkbox"]{display: none;}
 
 .clearfix::after{
     content:"";
@@ -58,7 +60,7 @@ ul {list-style: none;}
     height: 64px;
     margin-top: -14px;
     margin-right: 16px;
-    margin-left: -5px;    
+    margin-left: -5px;  
   }
 
   &-nav {
@@ -96,7 +98,7 @@ ul {list-style: none;}
       background-color: #d07058;
       color: @white;
     }
-  }    
+  }  
 }
  
 .drop-out-list:hover .catalog-list{display: block;}
@@ -126,7 +128,7 @@ ul {list-style: none;}
         background-color: #f6b5a5;
       }
 
-  &.active  {background-color: #d07058;}    
+  &.active  {background-color: #d07058;}  
   }
 
   a {
@@ -173,7 +175,7 @@ ul {list-style: none;}
 
     &.active {border-bottom: none;}
   }
-}    
+}  
 
 .userblock {
   .right;
@@ -198,7 +200,7 @@ ul {list-style: none;}
     color: @white;
     font: 900 2.2rem/2.4rem Roboto, sans-serif;
     margin-bottom: 17px;
-  }    
+  }  
 }
 
 .btn-top {
@@ -227,7 +229,7 @@ ul {list-style: none;}
     padding: 5px 8px;
     font-size: 1.7rem;
   } 
-}    
+}  
 
 .search-btn:hover,
 .enter-btn:hover,
@@ -265,7 +267,7 @@ ul {list-style: none;}
     font: 400 1.4rem/2.4rem Roboto, sans-serif;
   }
 }  
-   
+  
 /*-------------main----------*/
 
 .promo {
@@ -403,11 +405,11 @@ ul {list-style: none;}
       margin-bottom: 10px;
       font: 400 1.6rem/2.2rem Roboto, sans-serif;
     }
-    
+ 
 &:nth-of-type(1)::before {background-position: 0 -59px;}
-&:nth-of-type(2)::before {background-position: 0 0;}   
+&:nth-of-type(2)::before {background-position: 0 0;}  
 &:nth-of-type(3)::before {background-position: 0 -119px;}
-&:nth-of-type(4)::before {background-position: 0 -177px;}    
+&:nth-of-type(4)::before {background-position: 0 -177px;} 
 }  
 
 .news-section {
@@ -449,7 +451,7 @@ ul {list-style: none;}
   margin-bottom: 5px;
   background-image: url("../img/images/post-pattern.jpg");
   background-size: 40px 38px;
-             
+
   &-content {
     background-color: #f8f7f4;
     min-height: 210px;
@@ -530,6 +532,7 @@ ul {list-style: none;}
 .filters {
   color: @white;
   min-height: 200px;
+  max-width: 910px;
 
   h2{
     margin-top: -10px;
@@ -539,6 +542,7 @@ ul {list-style: none;}
 
   .filter {
     margin-right: 20px;
+    margin-bottom: 20px;
     .inline-top;
 
     p {margin-left: 15px;}
@@ -570,7 +574,7 @@ ul {list-style: none;}
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    cursor: pointer;   
+    cursor: pointer;  
   }
 
   select::-ms-expand {
@@ -634,36 +638,64 @@ ul {list-style: none;}
   }
 }
 
-.fat-filter {
+.fat-filter,
+.fill-filter {
 
-    ul{
-      height: 36px;
-      padding: 5px 10px;
-      margin-top: 3px;
-      .white-plank;
-    }
+  ul{
+    height: 36px;
+    padding: 5px 10px;
+    margin-top: 3px;
+    .white-plank;
+  }
 
-    li{
-      display: inline-block;
-      .inline-top;
-    }  
+  li{
+    display: inline-block;
+    .inline-top;
+  }  
 }
 
 input[type="radio"] + label,
 input[type="checkbox"] + label {
-  line-height: 20px;
-  margin: 0 0 20px;
-  padding-left: 34px;
+  position: relative;
+  padding-left: 28px;
+  margin: 0px 10px;
   cursor: pointer;
+}
+
+input[type="radio"] + label::before,
+input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 22px;
+  height: 22px;
+}
+
+input[type="radio"] + label::before {
+  background: url('../img/pictures/circle.png') no-repeat;
+}
+
+input[type="radio"]:checked + label::before {
+  background: url('../img/pictures/circle-dot.png') no-repeat;
+}
+
+input[type="checkbox"] + label::before {
+  background: url('../img/pictures/quad.png') no-repeat;
+}
+
+input[type="checkbox"]:checked + label::before {
+  background: url('../img/pictures/quad-check.png') no-repeat;
 }
 
 .item-list.inner {
   border-bottom: 1px solid @white-light;
+  margin-top: 40px;
 
   .pagination {
     position: relative;
     .right;
-    margin-top: 50px;
+    margin-top: 50px; 
     margin-bottom: 40px;
     padding: 0 20px;
 
