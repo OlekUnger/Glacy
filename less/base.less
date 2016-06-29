@@ -1,4 +1,6 @@
 
+
+
 html{font-size: 10px;}
   
 body {
@@ -7,7 +9,7 @@ body {
   color: @text-dark;
   background-size: 100% auto;
 }
- 
+
 *{
   margin: 0;
   padding: 0;
@@ -19,7 +21,7 @@ input[type="checkbox"]{display: none;}
 .clearfix::after{
     content:"";
     display: table;
-    clear:both; 
+    clear:both;
 }
 
 .container {
@@ -45,8 +47,8 @@ ul {list-style: none;}
       content: "";
       visibility: hidden;
     }
-    &::before {background-image: url("../img/images/slide-2.png");} 
-    &::after {background-image: url("../img/images/slide-3.png");}  
+    &::before {background-image: url("../img/images/slide-2.png");}
+    &::after {background-image: url("../img/images/slide-3.png");}
 }
 
 /*header-------------------------------------------------*/
@@ -60,7 +62,7 @@ ul {list-style: none;}
     height: 64px;
     margin-top: -14px;
     margin-right: 16px;
-    margin-left: -5px;  
+    margin-left: -5px;
   }
 
   &-nav {
@@ -79,7 +81,7 @@ ul {list-style: none;}
     padding-bottom: 7px;
   }
 
-  .drop-out-list{position: relative;}
+  .drop-out-list {position: relative;}
 
   .top-link {
     display: block;
@@ -98,9 +100,9 @@ ul {list-style: none;}
       background-color: #d07058;
       color: @white;
     }
-  }  
+  }
 }
- 
+
 .drop-out-list:hover .catalog-list{display: block;}
 
 .catalog-list {
@@ -118,7 +120,7 @@ ul {list-style: none;}
   li {
     display: block;
     margin-right: 0;
-    padding-bottom: 0;  
+    padding-bottom: 0;
       
       &:last-child {border-radius: 0 0 5px 5px;}
       &:first-child {border-radius: 5px 5px 0 0 ;}
@@ -128,7 +130,7 @@ ul {list-style: none;}
         background-color: #f6b5a5;
       }
 
-  &.active  {background-color: #d07058;}  
+  &.active {background-color: #d07058;}
   }
 
   a {
@@ -175,7 +177,7 @@ ul {list-style: none;}
 
     &.active {border-bottom: none;}
   }
-}  
+}
 
 .userblock {
   .right;
@@ -184,9 +186,9 @@ ul {list-style: none;}
   min-height: 32px;
   text-align: right;
 
-  &-buttons { 
+  &-buttons {
     font-size: 0;
-    text-align:right;
+    text-align: right;
   }
 
   p {
@@ -194,13 +196,13 @@ ul {list-style: none;}
     font: 700 1.4rem/1.6rem Roboto, sans-serif;
     margin-top: 12px;
     margin-bottom: 4px;
-  } 
+  }
 
   .phone {
     color: @white;
     font: 900 2.2rem/2.4rem Roboto, sans-serif;
     margin-bottom: 17px;
-  }  
+  }
 }
 
 .btn-top {
@@ -228,15 +230,15 @@ ul {list-style: none;}
     display: block;
     padding: 5px 8px;
     font-size: 1.7rem;
-  } 
-}  
+  }
+}
 
 .search-btn:hover,
 .enter-btn:hover,
 .cart-btn:hover {
   color: @text-dark;
   background-color: @white;
-} 
+}
   
 .fa-sign-in{
     position: absolute;
@@ -260,13 +262,13 @@ ul {list-style: none;}
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
   z-index: 20;
 
-  input[type="text"]  {
+  input[type="text"] {
     .input;
     width: 311px;
     padding: 10px 15px;
     font: 400 1.4rem/2.4rem Roboto, sans-serif;
   }
-}  
+}
   
 /*-------------main----------*/
 
@@ -278,7 +280,7 @@ ul {list-style: none;}
   padding: 16px 20px 22px;
   margin-right: 25px;
   border-radius: 10px;
-  margin-bottom: 40px;  
+  margin-bottom: 40px;
   overflow: hidden;
 
   &:nth-child(2n) {margin-right: 0;}
@@ -309,7 +311,7 @@ ul {list-style: none;}
   margin-bottom: 25px; 
   text-align: center;
   
-  &:nth-child(4n) {margin-right: 0;} 
+  &:nth-child(4n) {margin-right: 0;}
   
   &:hover::before {
     content: "";
@@ -405,25 +407,25 @@ ul {list-style: none;}
       margin-bottom: 10px;
       font: 400 1.6rem/2.2rem Roboto, sans-serif;
     }
- 
+
 &:nth-of-type(1)::before {background-position: 0 -59px;}
-&:nth-of-type(2)::before {background-position: 0 0;}  
+&:nth-of-type(2)::before {background-position: 0 0;}
 &:nth-of-type(3)::before {background-position: 0 -119px;}
-&:nth-of-type(4)::before {background-position: 0 -177px;} 
-}  
+&:nth-of-type(4)::before {background-position: 0 -177px;}
+}
 
 .news-section {
   margin-bottom: 23px;
 
   .news-blogs,
-  .news-mail{
+  .news-mail {
     .left;
     width: 560px;
     min-height: 220px;
     margin-bottom: 15px;
     border-radius: 10px;
     overflow: hidden;
-  }  
+  }
 }
 
 .news-blogs {
@@ -467,7 +469,7 @@ ul {list-style: none;}
     margin-bottom: 14px;
   }
   
-  form{padding-top: 20px;}
+  form {padding-top: 20px;}
   
   a {
     .inline-top;
@@ -523,7 +525,7 @@ ul {list-style: none;}
 }
 
 /* main inner-catalog*/
-.site-wrapper-inner { 
+.site-wrapper-inner {
   min-width: 860px;
   margin: 0 auto;
   background-color: #849d8f;
@@ -532,7 +534,7 @@ ul {list-style: none;}
 .filters {
   color: @white;
   min-height: 200px;
-  max-width: 910px;
+  max-width: 925px;
 
   h2{
     margin-top: -10px;
@@ -546,6 +548,21 @@ ul {list-style: none;}
     .inline-top;
 
     p {margin-left: 15px;}
+  }
+
+  button {
+    .white-plank;
+    border: 1px solid @white;
+    .inline-top;
+    line-height: 34px;
+    padding: 0px 20px;
+    margin-top: 24px;
+
+    &:hover {
+      background-color: @white;
+      color:@text-dark;
+    }
+    &:active {box-shadow: inset 0 2px 1px dimgrey;}
   }
 }
 
@@ -564,7 +581,7 @@ ul {list-style: none;}
       pointer-events: none;
       right: 15px;
     }
-  } 
+  }
   .pop-select{
     font: 600 1.6rem/1.8rem Roboto,sans-serif;
     margin-top: 3px;
@@ -574,7 +591,7 @@ ul {list-style: none;}
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    cursor: pointer;  
+    cursor: pointer;
   }
 
   select::-ms-expand {
@@ -633,8 +650,8 @@ ul {list-style: none;}
     top: 8px;
     cursor: pointer;
 
-    &.min-toggle{left:30px;}
-    &.max-toggle{right:50px;}
+    &.min-toggle {left:30px;}
+    &.max-toggle {right:50px;}
   }
 }
 
@@ -651,13 +668,13 @@ ul {list-style: none;}
   li{
     display: inline-block;
     .inline-top;
-  }  
+  }
 }
 
 input[type="radio"] + label,
 input[type="checkbox"] + label {
   position: relative;
-  padding-left: 28px;
+  padding-left: 30px;
   margin: 0px 10px;
   cursor: pointer;
 }
@@ -687,6 +704,8 @@ input[type="checkbox"] + label::before {
 input[type="checkbox"]:checked + label::before {
   background: url('../img/pictures/quad-check.png') no-repeat;
 }
+
+
 
 .item-list.inner {
   border-bottom: 1px solid @white-light;
@@ -735,7 +754,7 @@ input[type="checkbox"]:checked + label::before {
 /*footer*/
 
 .main-footer {
-  padding: 37px 0;  
+  padding: 37px 0;
   min-height: 103px;
   color: @white;
   font: 400 1.3rem/1.8rem Roboto, sans-serif;

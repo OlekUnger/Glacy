@@ -640,7 +640,7 @@ ul {
 .filters {
   color: #ffffff;
   min-height: 200px;
-  max-width: 910px;
+  max-width: 925px;
 }
 .filters h2 {
   margin-top: -10px;
@@ -655,6 +655,28 @@ ul {
 }
 .filters .filter p {
   margin-left: 15px;
+}
+.filters button {
+  display: block;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+  border-radius: 17px 17px;
+  ounline: none;
+  border: none;
+  border: 1px solid #ffffff;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 34px;
+  padding: 0px 20px;
+  margin-top: 24px;
+}
+.filters button:hover {
+  background-color: #ffffff;
+  color: #323232;
+}
+.filters button:active {
+  box-shadow: inset 0 2px 1px dimgrey;
 }
 .pop-filter .select {
   position: relative;
@@ -767,7 +789,7 @@ ul {
 input[type="radio"] + label,
 input[type="checkbox"] + label {
   position: relative;
-  padding-left: 28px;
+  padding-left: 30px;
   margin: 0px 10px;
   cursor: pointer;
 }
@@ -1062,3 +1084,5 @@ input[type="radio"] {
 /*background: -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
     background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
     background: linear-gradient(top, #f26843 0%, #e74a35 100%);*/
+
+/*# sourceMappingURL=style.css.map */
