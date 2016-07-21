@@ -715,11 +715,27 @@ ul {
   padding: 0 30px 0 10px;
   background-color: inherit;
 }
-.range-filter .range-controls {
-  position: relative;
+.price-controls-2 {
+  margin-left: 15px;
+}
+.price-controls-2 input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font: 400 1.4rem/1.6rem Roboto, sans-serif;
+  max-width: 25px;
+  margin-right: 5px;
+  text-align: center;
+  text-align: left;
+  word-spacing: 10px;
+  margin-left: 5px;
+}
+/*============RANGE_FILTER============*/
+.range-filter {
   width: 218px;
+  height: 36px;
   margin-top: 3px;
-  padding: 16px 15px;
+  padding: 16px 20px 0 20px;
   display: block;
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.2);
@@ -728,22 +744,55 @@ ul {
   ounline: none;
   border: none;
 }
-.range-filter .price-controls {
+.price-controls {
   margin-left: 15px;
 }
-.range-filter .scale {
-  width: 188px;
+#slider-range {
+  position: relative;
+  width: 100%;
   height: 4px;
   background-color: rgba(255, 255, 255, 0.2);
 }
-.range-filter .bar {
+#slider-range .ui-slider-handle.toggle {
   position: absolute;
-  width: 120px;
-  height: 4px;
-  left: 40px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
   background-color: #ffffff;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  top: -8px;
+  cursor: pointer;
 }
-.range-filter input {
+#slider-range .ui-widget-content {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.ui-widget-header {
+  background: #fff;
+  color: #ffffff;
+}
+.ui-slider-horizontal .ui-slider-range {
+  height: 4px;
+  position: absolute;
+}
+.ui-slider {
+  position: relative;
+  text-align: left;
+}
+.ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  cursor: default;
+  -ms-touch-action: none;
+  touch-action: none;
+}
+.ui-slider .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+}
+.ui-slider-horizontal .ui-slider-handle {
+  margin-left: -10px;
+}
+input {
   background-color: transparent;
   border: none;
   outline: none;
@@ -752,22 +801,7 @@ ul {
   margin-right: 5px;
   text-align: center;
 }
-.range-filter .toggle {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-  top: 8px;
-  cursor: pointer;
-}
-.range-filter .toggle.min-toggle {
-  left: 30px;
-}
-.range-filter .toggle.max-toggle {
-  right: 50px;
-}
+/*========end-of-range-filter*/
 .fat-filter ul,
 .fill-filter ul {
   height: 36px;

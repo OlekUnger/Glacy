@@ -604,56 +604,97 @@ ul {list-style: none;}
   }
 }
 
-.range-filter {
 
-  .range-controls {
-    position: relative;
-    width: 218px;
-    margin-top: 3px;
-    padding: 16px 15px;
-    .white-plank;
-  }
-
-  .price-controls{margin-left: 15px;}
-
-  .scale {
-    width: 188px;
-    height: 4px;
-    background-color: @white-light;
-  }
-
-  .bar {
-    position: absolute;
-    width: 120px;
-    height: 4px;
-    left:40px;
-    background-color: @white;
-  }
+.price-controls-2 {
+  margin-left: 15px;
 
   input {
     background-color: transparent;
     border:none;
     outline: none;
     font: 400 1.4rem/1.6rem Roboto,sans-serif;
-    max-width: 30px;
+    max-width: 25px;
     margin-right: 5px;
     text-align: center;
+    text-align: left;
+    word-spacing: 10px;
+    margin-left: 5px;
   }
+}
 
-  .toggle {
+/*============RANGE_FILTER============*/
+.range-filter {
+  width: 218px;
+  height: 36px;
+  margin-top: 3px;
+  padding: 16px 20px 0 20px;
+  .white-plank;
+}
+
+.price-controls{margin-left: 15px;}
+
+#slider-range {
+  position: relative;
+  width: 100%;
+
+  height: 4px;
+  background-color: @white-light;
+  
+  .ui-slider-handle.toggle{
     position: absolute;
     width: 20px;
     height: 20px;
     border-radius: 50%;
     background-color: @white;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-    top: 8px;
+    top: -8px;
     cursor: pointer;
-
-    &.min-toggle {left:30px;}
-    &.max-toggle {right:50px;}
+  }
+  .ui-widget-content{
+    background-color: @white-light;
   }
 }
+.ui-widget-header {
+    background: #fff;
+    color: #ffffff;
+  }
+
+.ui-slider-horizontal .ui-slider-range {
+  height: 4px;
+  position: absolute;
+}  
+
+.ui-slider {
+  position: relative;
+  text-align: left;
+}
+.ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  cursor: default;
+  -ms-touch-action: none;
+  touch-action: none;
+}
+.ui-slider .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+  margin-left:-10px;
+}
+
+input {
+  background-color: transparent;
+  border:none;
+  outline: none;
+  font: 400 1.4rem/1.6rem Roboto,sans-serif;
+  max-width: 30px;
+  margin-right: 5px;
+  text-align: center;
+}
+
+  /*========end-of-range-filter*/
 
 .fat-filter,
 .fill-filter {
