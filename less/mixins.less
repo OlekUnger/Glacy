@@ -85,7 +85,6 @@
 
     
 .input {
-  width: 100%;
   color: @text-dark;
   font: 400 1.6rem/2.4rem;
   padding: 11px 15px;
@@ -93,22 +92,21 @@
   border: 1px solid rgba(178, 178, 178, 0.52);
   border-radius: 5px;
 
+  & + label{display: none;}
+
   &:valid {background-color: @white;}
-  &:hover {border: 2px solid rgba(154, 154, 154, 0.52);}
-  &:focus {border: 2px solid rgba(46, 136, 228, 0.52);}
+  &:hover {border: 1px solid rgba(154, 154, 154, 0.52);}
+  &:focus {border: 1px solid rgba(46, 136, 228, 0.52);}
   &:focus + label {
+    display: inline;
+    position: absolute;
     top:-15px;
+    left: 5px;
     margin-top: -2px;
     font: 400 1.1rem/1.3rem Roboto,sans-serif;
     color: #5b9ddf;;
   }
-
-  & + label {
-    position: absolute;
-    top: 10px;
-    left: 15px;
-    color: #999;
-  } 
+  
 }
 
 
